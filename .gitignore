@@ -1,0 +1,110 @@
+# ============================================================================
+# Data & model artifacts — NEVER commit these
+# ============================================================================
+# Model checkpoints (each ~1.2GB)
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Numpy cache files
+*.npy
+*.npz
+
+# Downloaded weights and datasets
+outputs/
+data/
+kaggle_data/
+D:/Desktop/AI/**
+
+# Kaggle submission artifacts
+submission.csv
+submission_*.csv
+
+# Training logs (kept in .gitignore since they're per-run and huge; the
+# journal/RESULTS.md is the curated version of these)
+log.csv
+*_log.csv
+oof.csv
+oof_*.csv
+training_log.txt
+
+
+# ============================================================================
+# Sensitive / environment
+# ============================================================================
+kaggle.json
+.env
+.env.*
+*_secret*
+*_credentials*
+
+
+# ============================================================================
+# Python
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+conda-env/
+
+
+# ============================================================================
+# IDE / editors
+# ============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+
+# ============================================================================
+# Jupyter
+# ============================================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+
+# ============================================================================
+# Local misc
+# ============================================================================
+# Transcripts / journals from your prompt exchanges
+transcripts/
+2026-*-csiro-biomass-*.txt
+journal.txt
+
+# Uploaded / temp files
+uploads/
+tmp/
